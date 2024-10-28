@@ -1,4 +1,4 @@
-# Books site
+# Book Site
 
 Hi everyone! 
 This is one of my HMTL and CSS projects. It will be a website for a fictional bookstore.
