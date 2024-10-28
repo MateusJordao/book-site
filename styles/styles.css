@@ -1,0 +1,8 @@
+
+:root {
+    --cinza: #EBECEE;
+}
+
+body {
+    background-color: var(--cinza);
+}
