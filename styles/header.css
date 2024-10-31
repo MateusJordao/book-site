@@ -1,0 +1,23 @@
+
+.cabecalho__menu__hamburgue {
+    width: 24px; /* Define a largura do menu */
+    height: 24px; /* Define a altura do menu */
+    background-image: url("/img/Menu.svg"); /* Define a imagem do menu como imagem de fundo */
+    background-repeat: no-repeat;
+    display: inline-block; /* Criar o display em bloco, para que o menu tenha as dimenções que defini */
+}
+
+.cabecalho {
+    background-color: var(--branco); /* Define a cor de fundo */
+    display: flex; /* Inicia um display flex para manipulação dos objetos */
+    justify-content: space-between; /* Criar os espaço igual entre os objetos */
+    align-items: center; /* Alinha igualmente os objeto no centro */
+}
+
+.container {
+    align-items: center; /* Força o alinhamento dos objetos dentro das divs */
+}
+
+.container__imagem {
+    padding: 1em; /* Creat a iqual space between the itens */
+}

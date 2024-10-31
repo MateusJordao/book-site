@@ -1,6 +1,8 @@
+@import url("header.css");
 
 :root {
     --cinza: #EBECEE;
+    --branco: #FFFFFF;
 }
 
 body {
