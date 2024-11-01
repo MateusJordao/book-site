@@ -12,6 +12,7 @@
     display: flex; /* Starts a flex display to manipulate the objects */
     justify-content: space-between; /* Creates equal spacing between objects */
     align-items: center; /* Aligns objects evenly in the center */
+    position: relative; /* Unlock the positions of the itens to custumize later */
 }
 
 .container {
@@ -21,3 +22,15 @@
 .container__imagem {
     padding: 1em; /* Creat a iqual space between the itens */
 }
+
+.lista__menu { /* Custumize the list from the main menu */
+    display: none; /* Hide the list */
+    position: absolute; /* Change the position for absolute */
+    top: 100%; /* Makes the items appear above the main menu button */
+}
+
+.container__botao:checked~.lista__menu {
+    display: block; /* Makes the items appear whem the ckeckebox is selected */
+}
+
+
