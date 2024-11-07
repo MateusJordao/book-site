@@ -27,10 +27,27 @@
     display: none; /* Hide the list */
     position: absolute; /* Change the position for absolute */
     top: 100%; /* Makes the items appear above the main menu button */
+    width: 60vw;
 }
 
 .container__botao:checked~.lista__menu {
     display: block; /* Makes the items appear whem the ckeckebox is selected */
 }
 
+.lista__menu__titulo,
+.lista__menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
 
+.lista__menu__titulo {
+    color: var(--laranja);
+}
+
+.lista__menu__link {
+    background:  var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
