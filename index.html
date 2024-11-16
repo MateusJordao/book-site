@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Alura Books</title>
 </head>
@@ -46,7 +47,47 @@
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
     <section class="carrocel">
-        <h2 class="carrocel__titulo"></h2>        
+        <h2 class="carrocel__titulo">Últimos lançamentos</h2>
+        <div class="swiper-pagination"></div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Acessibilidade"></div>
+            <div class="swiper-slide"><img src="img/Arquitetura.svg" alt="Arquitetura"></div>
+            <div class="swiper-slide"><img src="img/Construct2.svg" alt="Construct2"></div>
+            <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Gestão2"></div>
+            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Guia Front-End"></div>
+            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Javascript"></div>
+            <div class="swiper-slide"><img src="img/MEAN.svg" alt="MEAN"></div>
+            <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="MetricasAgeis"></div>
+            <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Nodejs"></div>
+            <div class="swiper-slide"><img src="img/Tuning.svg" alt="Tuning"></div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>      
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            autoplay: {
+                delay: 2000,
+            },
+        });
+        
+    </script>
 </body>
 </html>
