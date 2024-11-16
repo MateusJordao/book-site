@@ -1,9 +1,10 @@
 
-.cabecalho__menu__hamburgue {
+.cabecalho__menu__hamburguer {
     width: 24px; /* Sets the menu width */
     height: 24px; /* Sets the menu height */
     background-image: url("/img/Menu.svg"); /* Sets the menu image as the background image */
     background-repeat: no-repeat;
+    background-position: center;
     display: inline-block; /* Creates a block display so the menu has the defined dimensions */
 }
 
@@ -16,6 +17,7 @@
 }
 
 .container {
+    display: flex;
     align-items: center; /* Forces alignment of objects inside divs */
 }
 
