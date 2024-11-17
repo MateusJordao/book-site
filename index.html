@@ -51,6 +51,7 @@
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
 
+    <!-- 1º section, para carrosel de ultimos laçamentos e card suugestão -->
     <section class="carrocel">
 
         <h2 class="carrocel__titulo">Últimos lançamentos</h2>
@@ -61,17 +62,17 @@
             <div class="swiper-pagination"></div>
 
             <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Acessibilidade"></div>
-            <div class="swiper-slide"><img src="img/Arquitetura.svg" alt="Arquitetura"></div>
-            <div class="swiper-slide"><img src="img/Construct2.svg" alt="Construct2"></div>
-            <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Gestão2"></div>
-            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Guia Front-End"></div>
-            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Javascript"></div>
-            <div class="swiper-slide"><img src="img/MEAN.svg" alt="MEAN"></div>
-            <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="MetricasAgeis"></div>
-            <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Nodejs"></div>
-            <div class="swiper-slide"><img src="img/Tuning.svg" alt="Tuning"></div>
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Acessibilidade"></div>
+                <div class="swiper-slide"><img src="img/Arquitetura.svg" alt="Arquitetura"></div>
+                <div class="swiper-slide"><img src="img/Construct2.svg" alt="Construct2"></div>
+                <div class="swiper-slide"><img src="img/Gestão2.svg" alt="Gestão2"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Guia Front-End"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Javascript"></div>
+                <div class="swiper-slide"><img src="img/MEAN.svg" alt="MEAN"></div>
+                <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="MetricasAgeis"></div>
+                <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Nodejs"></div>
+                <div class="swiper-slide"><img src="img/Tuning.svg" alt="Tuning"></div>
             </div>
         
             <!-- If we need navigation buttons -->
@@ -85,11 +86,72 @@
                 <!-- 1º coluna -->
                 <div class="descricao">
                     <h3 class="card__titulo">Talvez você também se interesse por...</h3>
-                    <h2 class="card__titulo-livro">Angular 11 e Firebase</h2>
+                    <h2 class="card__titulo-texto">Angular 11 e Firebase</h2>
                     <p class="card__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
                 </div>
                 <!-- 2 º coluna -->
                 <img class="card__imagem" src="img/Angular.svg" alt="Angular card">
+            </div>
+
+            <!-- 2 º linha -->
+            <div class="card__botoes">
+                <!-- 1º coluna -->
+                <ul class="botoes">
+                    <li class="botoes__item">
+                        <img src="img/Favoritos.svg" alt="Favoritos">
+                    </li>
+                    <li class="botoes__item">
+                        <img src="img/Compras.svg" alt="Sacola de compras">
+
+                    </li>
+                </ul>
+                <!-- 2º coluna -->
+                 <a href="#" class="card__ancora">Saiba mas</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 2º section para o carrossel de mais vendidos e card de auutor do mês -->
+    <section class="carrocel">
+
+        <h2 class="carrocel__titulo">Mais vendidos</h2>
+        <div class="swiper-pagination"></div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/Angular Book.svg" alt="Angular"></div>
+                <div class="swiper-slide"><img src="img/Gestão.svg" alt="Gestão"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Guia Front-End"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt="Liderança"></div>
+                <div class="swiper-slide"><img src="img/ReactNative.svg" alt="ReactNative"></div>
+                <div class="swiper-slide"><img src="img/UX.svg" alt="UX"></div>
+                <div class="swiper-slide"><img src="img/MEAN.svg" alt="MEAN"></div>
+                <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Nodejs"></div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descricao">
+                <!-- 1º coluna -->
+                <div class="descricao">
+                    <img class="card__estrelas" src="img/Estrelinhas.svg" alt="Estrelinhas">
+                    <h3 class="card__titulo">Autora do Mês</h3>
+                    <h2 class="card__titulo-texto">Juliana Agarikov</h2>
+                    <p class="card__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                </div>
+                <!-- 2 º coluna -->
+                <img class="card__imagem" src="img/Perfil-escritora 1.svg" alt="Autora">
             </div>
 
             <!-- 2 º linha -->
