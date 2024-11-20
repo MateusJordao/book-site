@@ -1,0 +1,64 @@
+
+.cabecalho__menu__hamburguer {
+    width: 24px; /* Sets the menu width */
+    height: 24px; /* Sets the menu height */
+    background-image: url("../img/Menu.svg"); /* Sets the menu image as the background image */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block; /* Creates a block display so the menu has the defined dimensions */
+}
+
+.cabecalho {
+    background-color: var(--branco); /* Sets the background color */
+    display: flex; /* Starts a flex display to manipulate the objects */
+    justify-content: space-between; /* Creates equal spacing between objects */
+    align-items: center; /* Aligns objects evenly in the center */
+    position: relative; /* Unlock the positions of the itens to custumize later */
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Forces alignment of objects inside divs */
+}
+
+.container__imagem {
+    padding: 1em; /* Creat a iqual space between the itens */
+}
+
+.lista__menu { /* Custumize the list from the main menu */
+    display: none; /* Hide the list */
+    position: absolute; /* Change the position for absolute */
+    top: 100%; /* Makes the items appear above the main menu button */
+    width: 60vw;
+}
+
+.container__botao:checked~.lista__menu {
+    display: block; /* Makes the items appear whem the ckeckebox is selected */
+}
+
+.lista__menu__titulo,
+.lista__menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista__menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista__menu__link {
+    background:  var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container__botao {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    
+}

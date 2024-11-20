@@ -1,0 +1,54 @@
+Pesquisar sobre a tag <span>.
+
+Paginas HTML são estaticas, por isso para dinamizar a melhor opção é agregar javascriptno codigo,
+porém à formas de contornar essa situação. Vou descrever abaixo.
+
+        <div class="container">
+             <input type="checkbox" id="menu" class="container__botao">
+              <label for="menu">
+           <span class="cabeçalho__menu-hamburguer container__imagem"></span></label>
+        </div>
+
+Basicamente o que é feito nessa linha é adicionar um checkbox no menu para guardar a informação de qaundo ele for selecionado,
+com isso temos um sistema on e off no botão. Fazemos isso atraves do input criando seu tipo e id, depois fazemos a funcionalidade
+pelo label englobando o span dentro dela.
+
+Após isso criamos uma lista ao final do label para adicionar os itens do menu, com uma ul e uma li.
+
+        <ul class="lista-menu">
+            <li class="lista-menu__titulo">Categorias</li>
+            <li class="lista-menu__item">
+                     <a href="#" class="lista-menu__link">Programação</a>
+              </li>
+              ...
+        </ul>
+
+Após isso partimos para custumização no CSS para que ele se comporte visualmente como um menu.
+
+.lista-menu {
+    display: none;
+}
+
+.container__botao:checked~.lista-menu {
+     display: block;
+}
+
+Aqui o que é feito é, garantir que a lista esteja oculta com o display: none na lista__menu, no container__botao:checked~.lista-menu fazer com que ele
+apereça quando o checkbox estiver selecionado. Vale comentar como funciona, primeiro a classe .container__botao que é usada no input é acionada ,
+depois a pseudoclasse :checked mostra que o a custumização será quando o checkbox estiver selecionado. E  paraa relacionar
+a lista usamos o ~ que é um combinador CSS, fazendo com que as classes container__botao e lista__menu são relacionadas, sendo assim,
+quando o botão for clicado a lista volta a aparecer com a função display: bolck;.
+
+Além disso adicionamos a função  position: relative; na classe cabeçalho, basicamente isso faz com que a posição de um intem seja "desbloqueada",
+criando esse elemento pai podemos usr um elemento filho depois para que possamos 
+excolher a posi do menu (da lista) da seguinte forma:
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+O top: 100%; faz com que o menu esteja na parte de baixo.
+
+
