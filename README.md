@@ -6,3 +6,5 @@ It's goning to have a hamburguer menu, links to other pages, examples of differe
 The idea of this project is to show what I can do using HTML and CSS, and practice de responsiveness of the website for different types of devices.
 
 This project was made in the Alura HTML and CSS: Responsiveness with Mobile-First course.
+
+Current version: 0.1 - MOBILE ONLY
