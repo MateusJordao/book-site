@@ -1,4 +1,4 @@
-# Book Site
+## 📙**Book Site**
 
 Hi everyone! 
 This is one of my HMTL and CSS projects. It will be a website for a fictional bookstore.
@@ -9,3 +9,6 @@ This project was made in the Alura HTML and CSS: Responsiveness with Mobile-Firs
 
 Link: https://mateusjordao.github.io/book-site/
 Current version: 0.1 - MOBILE ONLY
+
+## 📜 **License**
+This project is licensed under the terms of the [Licença MIT] (LICENSE.TXT).
