@@ -60,5 +60,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+    .cabecalho__menu__hamburguer {
+        display: none;
+    }
+
+    
     
 }
